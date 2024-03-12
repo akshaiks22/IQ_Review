@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Set background image */
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Set container background to black with some transparency */
+    color: #fff; /* Set text color to white */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* Set heading color to white */
+}
+
+.movie {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Set movie background to black with some transparency */
+    border-radius: 5px;
+    color: #fff; /* Set text color to white */
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    filter: grayscale(100%); /* Convert image to black and white */
+}
+
+.movie p {
+    margin: 10px 0;
+    color: #fff; /* Set text color to white */
+}

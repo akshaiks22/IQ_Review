@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>IQ Review</title>
+    <style>
+        /* Add this style to hide the form initially */
+        .form-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            z-index: 2;
+        }
+        /* Add this style to hide the form initially */
+        .form-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            z-index: 2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .form-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-container button:hover {
+            background-color: #161616;
+        }
+
+        .form-container #cancel {
+            background-color: #151414;
+        }
+
+        .form-container #cancel:hover {
+            background-color: #0c0c0c;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="vedio12.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>IQ Review</h1>
+            <div class="cta-container">
+                <a href="#" class="cta" onclick="toggleForm()">Add Reviews</a>
+
+                <!-- Form -->
+                <form id="theForm" class="form-container">
+                    <h1>Write review</h1>
+                    <label>Movie's name (Max. 50 characters)<input type="text" placeholder="Movie name..." name="name" id="name" maxlength="50" required></label>
+                    <label>Comment (Max. 300 characters)<input type="text" placeholder="Comment about the movie..." name="comment" id="comment" maxlength="300" required></label>
+                    <label>Image URL (Max. 150 characters)<input type="text" placeholder="URL for image..." name="image" id="image" maxlength="150"></label>
+                    <label>Rating</label>
+                    <select name="rating" id="rating" required>
+                        <option value="" disabled selected>Choose rating...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button type="submit" class="btn">Send review</button>
+                    <button type="button" class="btn" id="cancel" onclick="toggleForm()">Close form</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            var form = document.getElementById("theForm");
+            form.style.display = (form.style.display === "none" || form.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

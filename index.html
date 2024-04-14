@@ -80,9 +80,10 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="registration.html">Register</a></li>
-            <li><a href="movies.html">Movies</a></li>
+            <li><a href="Registration.html">Register</a></li>
+            <li><a href="wiki.html">Movie Details</a></li>
+            <li><a href="YOUTUBE.html">Trailer</a></li>
+            <li><a href="movies.html">Trending Movies</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -93,26 +94,7 @@
         <div class="content">
             <h1>IQ Review</h1>
             <div class="cta-container">
-                <a href="#" class="cta" onclick="toggleForm()">Add Reviews</a>
-
-                <!-- Form -->
-                <form id="theForm" class="form-container">
-                    <h1>Write review</h1>
-                    <label>Movie's name (Max. 50 characters)<input type="text" placeholder="Movie name..." name="name" id="name" maxlength="50" required></label>
-                    <label>Comment (Max. 300 characters)<input type="text" placeholder="Comment about the movie..." name="comment" id="comment" maxlength="300" required></label>
-                    <label>Image URL (Max. 150 characters)<input type="text" placeholder="URL for image..." name="image" id="image" maxlength="150"></label>
-                    <label>Rating</label>
-                    <select name="rating" id="rating" required>
-                        <option value="" disabled selected>Choose rating...</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <button type="submit" class="btn">Send review</button>
-                    <button type="button" class="btn" id="cancel" onclick="toggleForm()">Close form</button>
-                </form>
+                <a href="addrev.html">Add Reviews</a>
             </div>
         </div>
     </div>
